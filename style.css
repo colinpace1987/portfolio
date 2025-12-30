@@ -3,12 +3,12 @@
     width: 75%;
 }
 
-/* body {
+#body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
-} */
+}
 
 #grid {
   display: flex;
