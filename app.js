@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+
   class Grid {
     constructor() {
       this.color = "white";
@@ -283,13 +283,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const opponent = new Opponent;
   const obstacle = new Obstacle;
 
-  grid.create();
-  player.create();
-  opponent.create();
-  obstacle.create();
+  document.addEventListener('DOMContentLoaded', function () {
+      const startButton = document.getElementById('startButton');
 
-  opponent.gridToObject();
-  opponent.findPath();
+      startButton.addEventListener('click', function () {
+          startButton.style.display = 'none';
+          startGame();
+      });
+  });
 
-  document.addEventListener('keydown', player.move);
-})
+  function startGame() {
+
+      grid.create();
+      player.create();
+      opponent.create();
+      obstacle.create();
+
+      opponent.gridToObject();
+      opponent.findPath();
+
+      document.addEventListener('keydown', player.move);
+
+  }
