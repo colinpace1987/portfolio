@@ -278,9 +278,9 @@
     // }
 
      create() {
-      for (let i = 20; i < 295; i+=3) this.coordinates.push(i);
+      for (let i = 280; i < 295; i++) this.coordinates.push(i);
       const l = this.coordinates.length;
-      for (let i = 0; i < l; i++) {
+      for (let i = 0; i < l; i+=3) {
         grid.elements[this.coordinates[i]].style.backgroundColor = this.color;
         grid.elements[this.coordinates[i]].setAttribute("obstacle", true);
       }
