@@ -268,24 +268,14 @@
       this.coordinates = [];
     }
 
-    // create() {
-    //   for (let i = 280; i < 295; i++) this.coordinates.push(i);
-    //   const l = this.coordinates.length;
-    //   for (let i = 0; i < l; i++) {
-    //     grid.elements[this.coordinates[i]].style.backgroundColor = this.color;
-    //     grid.elements[this.coordinates[i]].setAttribute("obstacle", true);
-    //   }
-    // }
-
-     create() {
+    create() {
       for (let i = 280; i < 295; i++) this.coordinates.push(i);
       const l = this.coordinates.length;
-      for (let i = 0; i < l; i+=3) {
+      for (let i = 0; i < l; i++) {
         grid.elements[this.coordinates[i]].style.backgroundColor = this.color;
         grid.elements[this.coordinates[i]].setAttribute("obstacle", true);
       }
     }
-  }
 
   }
 
