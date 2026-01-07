@@ -23,7 +23,7 @@
   height: 20px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 600px) {
   #Djikstra {
     display: none;
   }
