@@ -24,6 +24,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  #TestingProfileImage {
+    height: 25%;
+    width: 25%;
+  }
+  
   #Djikstra {
     display: none;
   }
