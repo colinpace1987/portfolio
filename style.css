@@ -1,6 +1,6 @@
-#SelfPortrait {
-    height: 50%;
-    width: 50%;
+#TestingProfileImage {
+    height: 70%;
+    width: 70%;
 }
 
 #body {
@@ -24,11 +24,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  #SelfPortrait {
-    height: 25%;
-    width: 25%;
-  }
-  
   #Djikstra {
     display: none;
   }
