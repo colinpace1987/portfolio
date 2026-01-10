@@ -1,6 +1,6 @@
-#TestingProfileImage {
-    height: 48%;
-    width: 48%;
+#SelfPortrait {
+    height: 50%;
+    width: 50%;
 }
 
 #body {
@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #TestingProfileImage {
+  #SelfPortrait {
     height: 25%;
     width: 25%;
   }
