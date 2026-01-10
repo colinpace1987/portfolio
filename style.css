@@ -10,10 +10,6 @@
   height: 90vh;
 }
 
-.header, .section {
-  padding: 100px;
-}
-
 #grid {
   display: flex;
   flex-wrap: wrap;
