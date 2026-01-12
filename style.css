@@ -21,6 +21,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    padding: 30px;
+}
   #Djikstra {
     display: none;
   }
