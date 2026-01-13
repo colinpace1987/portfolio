@@ -1,7 +1,7 @@
 #TestingProfileImage {
     height: 70%;
     width: 70%;
-}
+} 
 
 body {
     padding: 100px;
@@ -20,10 +20,12 @@ body {
   height: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    padding: 30px;
+p {
+  line-height: 1.5;
+  font-size: 20px;
 }
+
+@media screen and (max-width: 600px) {
   #Djikstra {
     display: none;
   }
