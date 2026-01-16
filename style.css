@@ -26,6 +26,10 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  
   #Djikstra {
     display: none;
   }
