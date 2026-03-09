@@ -1,219 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Colin Pace Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colin Pace — Researcher • Strategist • Essayist</title>
+  
+  <meta name="description" content="Studying coordination, institutions, technology, and long-term human futures. Currently exploring epistemic infrastructure and mechanism design."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
 
-    <header id = "header">
+  <header class="site-header">
+    <div class="container">
+      <strong class="logo">Colin Pace</strong>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <h1>Colin Pace</h1>
-      
-    </header>
-
-      <br>
-      <br>
-
-    <section id = "autobio">
-
-      <h2>About Me</h2>
-
-      <p>Professionally, I have been a Geographic Information Systems Analyst. Before that, I was a Research Engineering Scientist. I have a background in anthropology, South Asian languages, and science, technology, engineering, and mathematics. I bring a combination of analytical rigor, cultural fluency, and technical acumen to my work. My intellectual interests range from science and technology, to environmentalism and plant-based diets. I am committed to cultivating a mindful and erudite life.</p>
-
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>Colin Pace</h1>
+        <p class="tagline">Scientist • Engineer • Essayist</p>
+        <p class="lead">I am interested in the natural and social sciences and the scientific method, software engienering and technology like the internet, and linguistics and languages, with a focus on Hindi and Spanish.</p>
+        
+        <div class="hero-cta">
+          <a href="#experience" class="btn btn-primary">View experience</a>
+          <a href="mailto:colinpace1987@gmail.com" class="btn btn-outline">Say hello →</a>
+        </div>
+      </div>
     </section>
 
-      <br>
-      <br>
-
-    <section id = "resume">
-
-      <h2>Experience</h2>
-
-      <p>Information Processing Specialist for Tata Consultancy Services at Apple, 2024</p>
-
-      <p>Research Engineering Scientist Associate I for Applied Research Laboratories (ARL) at The University of Texas at Austin (UT Austin), 2021</p>
-
-      <br>
-      <br>
-
-      <h2>Skills</h2>
-
-      <p>Geographic Information Systems (GIS)</p>
-
-      <p>Project management</p>
-
-      <p>Web development</p>
-
-      <p>Google Workspace</p>
-
-      <p>Apple hardware</p>
-
-      <p>Languages: Spanish and Hindi</p>
-
-      <br>
-      <br>
-
-
-      <h2>Education</h2>
-
-      <p>Google Project Management Certificate, 2023</p>
-
-      <p>Coding Boot Camp Certificate, UT Austin, 2021</p>
-
-      <p>Master of Arts, UT Austin, 2014</p>
-
-      <p>Bachelor of Arts with Honors, UT Austin, 2011</p>
-
-
-      <br>
-      <br>
-
-      <h2>Awards</h2>
-
-      <p>U.S. National Science Foundation (NSF) Graduate Research Fellowship, 2013</p>
-
-      <p>Foreign Language and Area Studies (FLAS) Fellowship from The South Asia Institute at UT Austin, 2013</p>
-
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I was trained in the social sciences and humanities, with degrees from the University of Texas at Austin in fields spanning sociocultural anthropology and Asian cultures and languages. My work today lives at the intersection of the natural and social sciences and the philosophy of technology.</p>
+            <br>
+            <p>Previously: GIS Analyst for TCS at Apple, Project Coordinator at ADU Geeks, Scientist at Applied Research Laboratories</p>
+          </div>
+          <figure class="about-photo">
+            <img src="portrait.jpg" 
+                 alt="Portrait of Colin Pace" width="480" height="480" loading="lazy"/>
+          </figure>
+        </div>
+      </div>
     </section>
 
-      <br>
-      <br>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+            
+            <article class="project-card">
+                <h3>Gem Search</h3>
+                <p class="project-meta">2025 • Open-source prototype</p>
+                <p>Description</p>
+                <div class="project-links">
+                <a href="https://github.com/colinpace1987/Gem-Search" target="_blank" rel="noopener">Repository →</a>
+                <a href="https://colinpace1987.github.io/Gem-Search/" target="_blank" class="project-link">Live demo / preprint →</a>
+                </div>
+            </article>
 
-    <!-- <section id = "TestingProfile">
+            <article class="project-card">
+                <h3>Algorithms and Programs</h3>
+                <p class="project-meta">2022 • Coding Textbook</p>
+                <p>Description.</p>
+                <div class="project-links">
+                <a href="./aap.pdf" target="_blank" id = "codingBookLink">Coding Book →</a>
+                </div>
+            </article>
 
-      <h2>Testing Profile</h2>
+            <article class="project-card">
+                <h3>Dijkstra's Algorithm Illustrated</h3>
+                <p class="project-meta">2020 • Interactive tool</p>
+                <p>Description.</p>
+                <div class="project-links">
+                <a href="https://github.com/colinpace1987/Dijkstras-Algorithm-Visualization" target="_blank" rel="noopener">Repository →</a>
+                <a href="https://colinpace1987.github.io/Dijkstras-Algorithm-Visualization/" target="_blank" class="project-link">Live demo / preprint →</a>
+                </div>
+            </article>
+            </div>
+        </div>
+        </section>
 
-      <img 
-            id = "TestingProfileImage" 
-            src = "./ColinPaceTestingProfile.png"
-      >
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>GIS Analyst for Tata Consultancy Services at Apple</h3>
+            <p class="project-meta">2024 - 2025 • Apple Maps Project</p>
+            <p>The Apple Maps application involves routing users to locations and providing different types of relevant information about the locations, terrain, and traffic in between the locations.</p>
+            <a href="#" class="project-link">Read draft →</a>
+          </article>
 
+          <article class="project-card">
+            <h3>Project Coordinator for ADU Geeks</h3>
+            <p class="project-meta">2023 • 30 Projects and an Architecture Team</p>
+            <p>ADU Geeks provides the blueprints for building an Accessory Dwelling Unit in southern California. Working with a team of architects and engineers to develop sustainable and affordable housing solutions, I coordinated among the teams and the city on 30 projects simultaneously.</p>
+            <a href="#" class="project-link">Full text →</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Research Engineering Scientist for Applied Research Laboratories</h3>
+            <p class="project-meta">2020 - 2021</p>
+            <p>Applied Research Laboratories is a laboratory affiliated with the University of Texas at Austin that works on state of the art research in various fields.</p>
+            <a href="#" class="project-link">Read paper →</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-      <br>
-      <br> -->
-
-    <section>
-
-      <h2>Writing</h2>
-      <a
-            href="https://medium.com/@colinpace1987" 
-            target="_blank" 
-            id = "blogLink"
-          >Articles
-      </a>
-
-      <br>
-      <br>
-
-      <a 
-            href="./aap.pdf" 
-            target="_blank" 
-            id = "codingBookLink"
-          >Coding Book
-      </a>
-
-      <br>
-      <br>
-
-
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-category">
+            <h3>Research & Analysis</h3>
+            <ul>
+              <li>High reading comprehension</li>
+              <li>Professional writing ability</li>
+              <li>Strategic thinking</li>
+              <li>Problem solving</li>
+            </ul>
+          </div>
+          <div class="skills-category">
+            <h3>Technical</h3>
+            <ul>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>CSS</li>
+              <li>Web development</li>
+              <li>Git & version control workflows</li>
+              <li>Geographic Information Systems (GIS)</li>
+            </ul>
+          </div>
+          <div class="skills-category">
+            <h3>Other</h3>
+            <ul>
+              <li>Scientific & philosophical writing</li>
+              <li></li>
+              <li>Interdisciplinary collaboration</li>
+              <li>Languages: Spanish and Hindi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-      <br>
-      <br>
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="education-list">
+            <article class="education-entry">
+                <h3>Certificate from the Coding Boot Camp</h3>
+                <p class="edu-meta">The University of Texas at Austin, 2021-2022</p>
+            </article>
+          <article class="education-entry">
+            <h3>Master's in Asian Cultures and Languages</h3>
+            <p class="edu-meta">The University of Texas at Austin, 2012–2014</p>
+            <p>MA Report: Reflections on Hindi and History</p>
+          </article>
 
-    <section>
+          <article class="education-entry">
+            <h3>B.A. in Anthropology</h3>
+            <p class="edu-meta">The University of Texas at Austin, 2005–2011</p>
 
-      <h2>Social Media Links</h2>
-
-      <a href = "https://www.facebook.com/profile.php?id=61580997774035">Facebook</a>
-
-      <br>
-      <br>
-
-      <a 
-      
-        href = "https://www.instagram.com/colinpace1987/"
-        target="_blank" 
-        
-      >Instagram</a>
-
-      <br>
-      <br>
-
-      <a 
-      
-        href = "https://medium.com/@colinpace1987"
-        target="_blank" 
-      
-      >Medium</a>
-
-      <br>
-      <br>
-
-      <a 
-      
-        href = "https://x.com/pace_colin1987"
-        target="_blank" 
-        
-      >X</a>
-
-      <br>
-      <br>
-
-      <a 
-        
-        href = "https://www.youtube.com/@ColinPace1987"
-        target="_blank" 
-        
-      >YouTube</a>
-
-      <br>
-      <br>
-
-      <a 
-        
-        href = "https://hellotalk.com/u/h_colinpace"
-        target="_blank" 
-        
-      >HelloTalk for languages and linguistics</a>
-
-      <br>
-      <br>
-      
-      <a 
-        
-        href = "https://colinpace1987.github.io/Gem-Search/"
-        target="_blank" 
-        
-      >Gem Search (my game on Microsoft's Github)</a>
-
-      <br>
-      <br>
-
-      <a 
-        
-        href = "https://colinpace1987.github.io/Dijkstras-Algorithm-Visualization/"
-        target="_blank" 
-        
-      >Dijkstra's Algorithm Visualization</a>
-
-      <br>
-      <br>
-
+          </article>
+        </div>
+      </div>
     </section>
-    
-      <br>
-      <br>
-    
-    
-    
-    
-    
-    <script src="app.js"></script>
-  </body>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>I welcome thoughtful correspondence on coordination, institutions, longtermism, epistemic technology, or serious games.</p>
+        <p class="contact-links">
+          <a href="mailto:hello@colinpace1987@gmail.com">colinpace1987@gmail.com</a><br>
+          <a href="https://www.youtube.com/@ColinPace1987" target="_blank" rel="noopener">YouTube</a> •
+          <a href="https://github.com/yourhandle" target="_blank" rel="noopener">GitHub</a> •
+          <a href="https://medium.com/@colinpace1987" target="_blank" rel="noopener">Medium</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
